@@ -1,4 +1,4 @@
-import userAPI from "@/components/services/userApi.js";
+import userAPI from "@/components/services/userAPI.js";
 
 import { createAsyncThunk } from "@reduxjs/toolkit";
 // import userAPI from "@/components/services/userApi.js";
