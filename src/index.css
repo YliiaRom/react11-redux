@@ -245,6 +245,7 @@ h3 span {
 
   margin: 20px auto;
   border-radius: 30px;
+  color: #000;
 }
 .mainBtn:hover {
   background: radial-gradient(circle, #174838, #113227);
