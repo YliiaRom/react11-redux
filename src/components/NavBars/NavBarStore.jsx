@@ -32,12 +32,19 @@ function NavBarStore() {
             @reduxjs/toolkit
             <br />
             --- <br />
-            useSelector()/useDispatch()
+            useSelector()/ useDispatch() / createSelector()
             <br />
             Flux-архітектура
             <br />
             old- createState() /<br />
             createSlice() + configureStore()
+            <br />
+            <br />
+            createSlice
+            <br />
+            createAsyncThunk() / &#123; rejectWithValue &#125;
+            <br />
+            extraReducers / builder / addCase()
             <br />
           </h1>
         </li>
