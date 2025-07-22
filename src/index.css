@@ -412,6 +412,7 @@ label input {
   border: none;
   background-color: transparent;
   transition: 0.3s;
+  color: black;
 }
 .openListBtn:hover {
   box-shadow: -1px -1px 1px #ffffff55, 2px 2px 3px #174838;
