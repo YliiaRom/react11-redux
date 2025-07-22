@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import imgCard from "../../../../assets/img/disp.jpg";
 import {
   fetchCategories,
   fetchProductsByCategories,
@@ -9,13 +10,41 @@ const productSlice = createSlice({
   name: "products",
   initialState: {
     products: [],
+    productsNew: [],
     categories: [],
     loading: false,
     error: null,
+    newProduct: {
+      id: Date.now(),
+      title: "",
+      price: "",
+      category: "",
+      brand: "",
+      image: imgCard,
+    },
   },
   reducers: {
     delProducts: (state) => {
       state.products = [];
+    },
+    updateNewProductField: (state, action) => {
+      const { name, value } = action.payload;
+      state.newProduct[name] = value;
+    },
+    createNewCard: (state) => {
+      state.newProduct = {
+        ...state.newProduct,
+        id: Date.now(),
+      };
+      state.productsNew = [...state.productsNew, state.newProduct];
+      state.newProduct = {
+        id: Date.now(),
+        title: "",
+        price: "",
+        category: "",
+        brand: "",
+        image: imgCard,
+      };
     },
   },
   extraReducers: (builder) => {
@@ -61,4 +90,5 @@ const productSlice = createSlice({
   },
 });
 export default productSlice.reducer;
-export const { delProducts } = productSlice.actions;
+export const { delProducts, updateNewProductField, createNewCard } =
+  productSlice.actions;

@@ -507,7 +507,7 @@ label input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .productsList li {
   padding: 1.5em 1.2em;
@@ -561,4 +561,8 @@ label input {
   padding: 10px;
   box-shadow: -2px -3px 2px #ffffff75, 0px 5px 10px #0d3528;
   border-radius: 30px;
+}
+.newProductSection {
+  padding: 10px;
+  border-top: 2px dotted #fff;
 }
